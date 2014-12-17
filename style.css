@@ -1,0 +1,99 @@
+a.button {
+	display: inline-block;
+	padding: 6px 12px;
+	margin: 2px;
+	line-height: 30px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-width: 1px;
+	border-style: solid;
+	text-decoration: none;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.09);
+	text-decoration: none !important;
+	cursor: pointer;
+	outline: none;
+	background-color: #D2D2D2;
+	border-color: #D2D2D2;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D2D2D2), color-stop(0.5, #E4E4E4), color-stop(0.5, #EDEDED), color-stop(1, #FFFFFF));
+	background-image: -webkit-linear-gradient(center top, #D2D2D2 0%, #E4E4E4 50%, #EDEDED 50%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(center top, #D2D2D2 0%, #E4E4E4 50%, #EDEDED 50%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(center top, #D2D2D2 0%, #E4E4E4 50%, #EDEDED 50%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(center top, #D2D2D2 0%, #E4E4E4 50%, #EDEDED 50%, #FFFFFF 100%);
+	background-image: linear-gradient(to top, #D2D2D2 0%, #E4E4E4 50%, #EDEDED 50%, #FFFFFF 100%);
+}
+a.button:hover {
+	background-color: #4488ee;
+	border-color: #4488ee;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4488ee), color-stop(0.5, #5590ee), color-stop(0.5, #77a2ff), color-stop(1, #88aaff));
+	background-image: -webkit-linear-gradient(center top, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	background-image: -moz-linear-gradient(center top, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	background-image: -o-linear-gradient(center top, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	background-image: -ms-linear-gradient(center top, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	background-image: linear-gradient(to top, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	color: #FFF;
+}
+a.button:active {
+	background-color: #4488ee;
+	border-color: #4488ee;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4488ee), color-stop(0.5, #5590ee), color-stop(0.5, #77a2ff), color-stop(1, #88aaff));
+	background-image: -webkit-linear-gradient(center bottom, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	background-image: -moz-linear-gradient(center bottom, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	background-image: -o-linear-gradient(center bottom, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	background-image: -ms-linear-gradient(center bottom, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	background-image: linear-gradient(to bottom, #4488ee 0%, #5590ee 50%, #77a2ff 50%, #88aaff 100%);
+	color: #FFF;
+}
+.ripple {
+	overflow: hidden;
+	position: relative !important;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.ripple .ripple-effect {
+	position: absolute !important;
+	pointer-events: none !important;
+	position: absolute !important;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-o-border-radius: 100%;
+	-moz-border-radius: 100%;
+	width: 0px;
+	height: 0px;
+	float: left;
+	transition-property: border-radius, width, height, background, margin-left, margin-top;
+	transition-duration: 150ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition-property: border-radius, width, height, background, margin-left, margin-top;
+	-webkit-transition-duration: 150ms;
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-moz-transition-property: border-radius, width, height, background, margin-left, margin-top;
+	-moz-transition-duration: 150ms;
+	-moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-o-transition-property: border-radius, width, height, background, margin-left, margin-top;
+	-o-transition-duration: 150ms;
+	-o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ripple .ripple-effect-out {
+	position: absolute !important;
+	pointer-events: none !important;
+	transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	-moz-transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	-o-transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ripple .ripple-stop {
+	position: absolute !important;
+	pointer-events: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	-webkit-transition: none !important;
+	transition: none !important;
+}
