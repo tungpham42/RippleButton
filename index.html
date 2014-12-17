@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ripplebutton by tungpham42</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ripplebutton</h1>
+        <p>Inspired by Paper Ripple Effect of Google Material Design</p>
+        <p class="view"><a href="https://github.com/tungpham42/RippleButton">View the Project on GitHub <small>tungpham42/RippleButton</small></a></p>
+        <ul>
+          <li><a href="https://github.com/tungpham42/RippleButton/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/tungpham42/RippleButton/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/tungpham42/RippleButton">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="ripple-button" class="anchor" href="#ripple-button" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ripple Button</h1>
+
+<p>A ripple button inspired by Google material design and modified from MAWButton Plugin of Michael Chen , Will Huang , Amin Lee</p>
+
+<p><a href="http://tungpham42.github.io/RippleButton/">Demo site</a></p>
+
+<h1>
+<a id="required" class="anchor" href="#required" aria-hidden="true"><span class="octicon octicon-link"></span></a>Required</h1>
+
+<ul>
+<li>jQuery</li>
+<li>jQuery Color</li>
+</ul>
+
+<h1>
+<a id="browser-support" class="anchor" href="#browser-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Browser Support</h1>
+
+<p>Modern browser like Chrome, Safari, FireFox...etc.</p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>First of all, you have to inlcude the style.</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s1"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">"</span>jquery.ripple.css<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<p>And include script as well.  </p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>jquery.ripple.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>You may add some elements like this:  </p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span>&gt;Link Button&lt;/<span class="pl-ent">a</span>&gt;
+&lt;<span class="pl-ent">button</span>&gt;Pure Button&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+
+<p>To init the ripple button with default options:</p>
+
+<div class="highlight highlight-html"><pre><span class="pl-s2">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s2">    $(<span class="pl-s1"><span class="pl-pds">'</span>a.button, button<span class="pl-pds">'</span></span>).ripple();</span>
+<span class="pl-s2">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<p>or with custom options:   </p>
+
+<div class="highlight highlight-html"><pre><span class="pl-s2">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s2">    $(<span class="pl-s1"><span class="pl-pds">'</span>a.button, button<span class="pl-pds">'</span></span>).ripple({</span>
+<span class="pl-s2">        speed <span class="pl-k">:</span> <span class="pl-c1">222</span>,</span>
+<span class="pl-s2">        alpha <span class="pl-k">:</span> <span class="pl-c1">0.222</span></span>
+<span class="pl-s2">    });</span>
+<span class="pl-s2">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<h1>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h1>
+
+<table>
+<thead>
+<tr>
+<th align="left">Option</th>
+<th align="left">Default</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>speed</code></td>
+<td align="left">333</td>
+<td align="left">int</td>
+<td align="left">The duration which are given in milliseconds of effect.</td>
+</tr>
+<tr>
+<td align="left"><code>alpha</code></td>
+<td align="left">0.333</td>
+<td align="left">int</td>
+<td align="left">The transparency alpha of the ripple.</td>
+</tr>
+<tr>
+<td align="left"><code>transitionEnd</code></td>
+<td align="left">function(){}</td>
+<td align="left">function</td>
+<td align="left">Callback after transition end.</td>
+</tr>
+</tbody>
+</table>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>LICENSE</h1>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2014 Tung Pham</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/tungpham42">tungpham42</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
