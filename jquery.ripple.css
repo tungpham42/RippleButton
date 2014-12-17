@@ -1,0 +1,49 @@
+.ripple {
+	overflow: hidden;
+	position: relative !important;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.ripple .ripple-effect {
+	position: absolute !important;
+	pointer-events: none !important;
+	position: absolute !important;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-o-border-radius: 100%;
+	-moz-border-radius: 100%;
+	width: 0px;
+	height: 0px;
+	float: left;
+	transition-property: border-radius, width, height, background, margin-left, margin-top;
+	transition-duration: 150ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition-property: border-radius, width, height, background, margin-left, margin-top;
+	-webkit-transition-duration: 150ms;
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-moz-transition-property: border-radius, width, height, background, margin-left, margin-top;
+	-moz-transition-duration: 150ms;
+	-moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-o-transition-property: border-radius, width, height, background, margin-left, margin-top;
+	-o-transition-duration: 150ms;
+	-o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ripple .ripple-effect-out {
+	position: absolute !important;
+	pointer-events: none !important;
+	transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	-moz-transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	-o-transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ripple .ripple-stop {
+	position: absolute !important;
+	pointer-events: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	-webkit-transition: none !important;
+	transition: none !important;
+}

@@ -2,14 +2,17 @@
 <html>
 	<head>
 		<title>Ripple Button Demo</title>
-		<link href="/style.css" rel="stylesheet">
+		<link href="./style.css" rel="stylesheet">
+		<link href="./jquery.ripple.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+		<script src="./jquery.ripple.js"></script>
 	</head>
 	<body>
-		<a class="button">RIPPLE BUTTON</a>
+		<a class="button">RIPPLE BUTTON</a><br/>
+		<button>RIPPLE BUTTON</button>
 		<script>
-			$('a.button').ripple();
+			$('a.button, button').ripple();
 		</script>
 	</body>
 </html>
