@@ -8,8 +8,8 @@ A ripple button inspired by Google material design and modified from MAWButton P
 Required
 ========
 
- - jQuery
- - jQuery Color
+ - jQuery (https://code.jquery.com/jquery-1.11.1.min.js)
+ - jQuery Color (https://code.jquery.com/color/jquery.color-2.1.2.min.js)
  
 Browser Support
 ===============
