@@ -3,7 +3,7 @@ Ripple Button
 
 A ripple button inspired by Google material design and modified from MAWButton Plugin of Michael Chen , Will Huang , Amin Lee
 
-[Demo site](http://tungpham42.github.io/RippleButton/)
+[Demo site](http://nhipsinhhoc.vn)
 
 Required
 ========
