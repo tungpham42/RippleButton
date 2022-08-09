@@ -5,6 +5,8 @@ A ripple button inspired by Google material design and modified from MAWButton P
 
 [Demo site](http://nhipsinhhoc.vn)
 
+[Demo URL](https://tungpham42.github.io/ripple-button/)
+
 [Working jsFiddle](http://jsfiddle.net/4rrj26mg/)
 
 Required
